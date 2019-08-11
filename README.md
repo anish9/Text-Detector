@@ -24,8 +24,8 @@ https://drive.google.com/open?id=1PspjXeqx6IHzOeBZy6mMbBc-6kLdLI2C
 
 ## Todo
 [x] - added varaiable complex patterns
-[] - block parser to be updated
-[] - Text correction angles to be added
+[ ] - block parser to be updated
+[ ] - Text correction angles to be added
 
 			   
 			   
