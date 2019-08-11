@@ -7,7 +7,7 @@ scene text detector
  - SciPy
 
 ### Some Results
-<img src="https://github.com/anish9/look_into_text/blob/master/output/preds009.jpg" alt="Smiley Sface" height="400" width="400">
-<img src="https://github.com/anish9/look_into_text/blob/master/output/preds002.jpg" alt="Smiley Sface" height="400" width="400">
-<img src="https://github.com/anish9/look_into_text/blob/master/output/preds008.jpg" alt="Smiley Sface" height="400" width="400">
+<img src="https://github.com/anish9/look_into_text/blob/master/output/preds009.jpg" alt="Smiley Sface" height="400" width="500">
+<img src="https://github.com/anish9/look_into_text/blob/master/output/preds002.jpg" alt="Smiley Sface" height="400" width="500">
+<img src="https://github.com/anish9/look_into_text/blob/master/output/preds008.jpg" alt="Smiley Sface" height="400" width="500">
 
