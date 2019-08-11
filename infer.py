@@ -35,7 +35,7 @@ def resizer_block(tensor,size):
 
 
 loaded = tf.keras.models.load_model("model/keras.h5")
-print(f"Model Loaded Successfuly with tensoflow {ver}")
+print(f"Model Loaded Successfully with tensoflow {ver}")
 
 def predict_func(tensor):
     sample_tensor = tensor
