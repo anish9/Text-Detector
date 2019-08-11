@@ -38,23 +38,39 @@ loaded = tf.keras.models.load_model("model/keras.h5")
 print(f"Model Loaded Successfully with tensoflow {ver}")
 
 def predict_func(tensor):
+    """custom flags"""
+    
+    BG = [0,0,0]
+    FG = [255,255,255]
+    
     sample_tensor = tensor
     load_it = load_img(sample_tensor,target_size=(512,512))
     array_it = img_to_array(load_it) / 255.
+    
     array_it = array_it.astype(np.float32)
     expand_ = np.expand_dims(array_it,axis=0)
     prediction  = loaded.predict(expand_)
+    
+    
     maop = np.argmax(prediction>=0.98,axis=-1)
     maop = np.squeeze(maop)
+    
+    
     load_image = cv2.imread(sample_tensor)
     height ,width= load_image.shape[0],load_image.shape[1]
+    
     newmask = scipy.ndimage.zoom(maop, (height/350,width/350), order=1, mode='nearest')
     maxes = newmask
-    load_image[maxes==0] = [0,0,0]
-    load_image[maxes==1] = [255,255,255]
-    load_image[maxes==2] = [255,255,255]
-    load_image[maxes==3] = [0,0,0]
-    load_image[maxes==4] = [0,0,0]
+    load_image[maxes==0] = BG
+    
+    load_image[maxes==1] = FG
+    
+    load_image[maxes==2] = FG
+    
+    load_image[maxes==3] = BG
+    
+    load_image[maxes==4] = BG
+    
     return load_image
     
     
@@ -83,5 +99,7 @@ def TEXT_DETECT(file_,texts=14,kernal_size=(1,1)):
             cv2.imwrite("output/"+str(rand_num)+"_gen.jpg",rect_file)
             
             
-            
+ 
+"""prediction function"""
+
 PREDICT  = TEXT_DETECT(in_image)
