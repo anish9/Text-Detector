@@ -25,7 +25,7 @@ python3 infer.py image_input.jpg
 
 
 ### Todo
-- [x] - added varaiable complex patterns
+- [x] - added variable complex patterns
 - [ ] - block parser to be updated
 - [ ] - Text correction angles to be added
 
