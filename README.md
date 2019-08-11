@@ -1,5 +1,5 @@
 # look_into_text
-scene text detector 
+scene text parser
 ### Requirements 
  - Tensorflow 1.12 <= 
  - Keras 2.2
@@ -18,7 +18,10 @@ https://drive.google.com/open?id=1PspjXeqx6IHzOeBZy6mMbBc-6kLdLI2C
 > execute from terminal
 > download the model and place it on model folder
 
-```
-python3 infer.py image_input.jpg
+```python3 infer.py image_input.jpg
+			   ```
 			   
-```
+[] - Text correction angles to be added
+[] - define definite parameters
+			   
+			   
