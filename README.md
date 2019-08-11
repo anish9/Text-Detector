@@ -11,3 +11,14 @@ scene text detector
 <img src="https://github.com/anish9/look_into_text/blob/master/output/preds002.jpg" alt="Smiley Sface" height="400" width="500">
 <img src="https://github.com/anish9/look_into_text/blob/master/output/preds008.jpg" alt="Smiley Sface" height="400" width="500">
 
+### Download the pretrained model in below link
+https://drive.google.com/open?id=1PspjXeqx6IHzOeBZy6mMbBc-6kLdLI2C
+
+### To infer results
+> execute from terminal
+> download the model and place it on model folder
+
+```
+python3 infer.py image_input.jpg
+			   
+```
