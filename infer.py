@@ -74,7 +74,7 @@ def predict_func(tensor):
     return load_image
     
     
-"""extended approach @"""
+"""extended approach @controlled ..."""
     
 def TEXT_DETECT(file_,texts=14,kernal_size=(1,1)):
     H_param = 15
