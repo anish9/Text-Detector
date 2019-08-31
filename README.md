@@ -1,4 +1,5 @@
 | Build Type      | Status | Passing |
+| ---             | ---    | ---       |
 
 # look_into_text
 scene text parser
