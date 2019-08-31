@@ -1,4 +1,4 @@
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1486/badge)](https://bestpractices.coreinfrastructure.org/projects/1486)
+
 
 # look_into_text
 scene text parser
