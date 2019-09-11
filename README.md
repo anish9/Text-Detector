@@ -24,12 +24,13 @@ https://drive.google.com/open?id=1PspjXeqx6IHzOeBZy6mMbBc-6kLdLI2C
 python3 infer.py image_input.jpg
 
 ```
-
+- Trainer will be added soon
 
 ### Todo
 - [x] - added variable complex patterns
 - [ ] - block parser to be updated
 - [ ] - Text correction angles to be added
+
 
 			   
 			   
