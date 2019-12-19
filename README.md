@@ -1,6 +1,6 @@
 
 
-# Look_into_text
+# Text_Parser
 scene text parser
 ### Requirements 
  - Tensorflow 1.12 <= 
