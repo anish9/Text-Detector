@@ -103,3 +103,46 @@ def TEXT_DETECT(file_,texts=14,kernal_size=(1,1)):
 """prediction function"""
 
 PREDICT  = TEXT_DETECT(in_image)
+
+
+
+# cv2 padding 
+# def resize_inference(file,dsize=672):
+
+#     desired_size = dsize
+#     im_pth = file
+#     im = cv2.imread(im_pth)
+#     old_size = im.shape[:2]
+#     ratio = float(desired_size)/max(old_size)
+#     new_size = tuple([int(x*ratio) for x in old_size])
+#     im = cv2.resize(im, (new_size[1], new_size[0]))
+#     delta_w = desired_size - new_size[1]
+#     delta_h = desired_size - new_size[0]
+#     top, bottom = delta_h//2, delta_h-(delta_h//2)
+#     left, right = delta_w//2, delta_w-(delta_w//2)
+#     color = [0,0,0]
+#     new_im = cv2.copyMakeBorder(im, top, bottom, left, right, cv2.BORDER_CONSTANT,
+#         value=color)
+#     if (top==0 and bottom==0):
+#         cord = {"left":left,"right":dsize-right}
+#     else:
+#         cord = {"top":top,"bottom":dsize-bottom}
+#     return new_im,cord
+
+
+# def padded_Resizer(imfile):
+#     im,cor = resize_inference(imfile)
+#     if "top" in cor.keys():
+#         start = cor["top"]
+#         end   = cor["bottom"]
+#         im = im[start:end,:]
+
+#     if "left" in cor.keys():
+#         start = cor["left"]
+#         end   = cor["right"]
+#         im = im[:,start:end]
+#     return im
+
+
+
+# plt.imshow(padded_Resizer("Mag3.jpg"))
